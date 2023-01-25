@@ -1,0 +1,2 @@
+#! /bin/sh
+python3 train.py && python3 train.py --freeze True && python3 train.py --cos_scheduler False && python3 train.py --lr_backbone 0.00001 && python3 train.py --lr_backbone 0.001 && python3 train.py --lr_backbone 0.01 && cp -rf detection_exp* ../output/WithoutPretrained/
